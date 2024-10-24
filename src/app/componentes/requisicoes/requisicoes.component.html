@@ -1,0 +1,25 @@
+<h1>Seleções</h1>
+<h2>Digite os inputs</h2>
+<input type="text" [(ngModel)]="novaSelecao.selecao" placeholder="Digite o nome da seleção">
+<input type="text" [(ngModel)]="novaSelecao.grupo" placeholder="Digite o grupo">
+<button (click)="addSelecao()">Clica para add</button>
+<ul>
+    <li *ngFor="let selecao of selecoes">
+        <p>ID:{{selecao.idselecoes}} | Seleção: {{selecao.selecao}} | Grupo: {{selecao.grupo}}</p>
+    </li>
+</ul>
+<h1>Atualizar Seleção</h1>
+<input type="text" [(ngModel)]="novaSelecao.idselecoes" placeholder="Digite o id">
+<input type="text" [(ngModel)]="novaSelecao.selecao" placeholder="Digite o nome da seleção">
+<input type="text" [(ngModel)]="novaSelecao.grupo" placeholder="Digite o grupo">
+<button (click)="atualizarSelecao()">Atualizar</button>
+
+<h1>Excluir Seleções</h1>
+<input type="text" [(ngModel)]="novaSelecao.idselecoes" placeholder="Digite o id">
+<input type="text" [(ngModel)]="novaSelecao.selecao" placeholder="Digite o nome da seleção">
+<input type="text" [(ngModel)]="novaSelecao.grupo" placeholder="Digite o grupo">
+<button (click)="deletarSelecao()">Deletar</button>
+
+  
+
+
