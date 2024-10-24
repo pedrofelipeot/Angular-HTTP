@@ -11,12 +11,12 @@ export class RequisicoesComponent implements OnInit {
   selecoes: any[] = [];
   novaSelecao: {
     idselecoes:number
-    selecao: string;  // Alterado para 'selecao'
-    grupo: string;    // Alterado para 'grupo'
+    selecao: string;  
+    grupo: string;   
   } = {
     idselecoes: 0,
-    selecao: '',      // Alterado para 'selecao'
-    grupo: ''        // Alterado para 'grupo'
+    selecao: '',     
+    grupo: ''      
   };
   
   constructor(private service: Servico01Service) {}
